@@ -2,15 +2,16 @@
   A lightweight pytorch model that can classify 16 different languages 
 
  ### Table of Contents
-
 - Intro
+- Model
 - Datasets 
 - Training
+- Possible Errors
 
 ---
 
 ### Intro
-  lang16-detector is a extermly lightweight pytorch model, that can classify these 16 languages:
+  lang16-detector is a extremely lightweight pytorch model, that can classify these 16 languages:
   - Catalan
   - Danish
   - German
@@ -30,6 +31,11 @@
 
 ---
 
+### Model
+The model is around 
+
+---
+
 ### DataSets
 This repository contains 5 datasets:
   - large_test_data.json ~ 30 million tokens
@@ -39,8 +45,20 @@ This repository contains 5 datasets:
   - very_small_test.json ~ 200 tokens
 
 
-All of these datasets were created from files obtained from Project Gutenberg. They were sorted via guten-sort(another one of my public repositories) and a few helper scripts, which I included in this repository under dataset creation. These helper scripts are not documeted as well as the training script and the querying script, and are most likely not optimized at all. But they do what they have to and should allow someeone to recreate these datasets if neccesary
+All of these datasets were created from files obtained from Project Gutenberg. They were sorted via guten-sort(another one of my public repositories) and a few helper scripts, which I included in this repository under dataset creation. These helper scripts are not documeted as well as the training script and the querying script, and are most likely not optimized at all. But they work and should allow someeone to recreate these datasets if neccesary.
 
+The datasets are evenly split with no class taking up more than 7% of the total datasets. When using these datasets, the user will not need to worry about uneven distribution.
+
+---
+
+### Training
+Training took 3 epochs with each epoch taking around 27 minutes. With more power, a user could shorten the training time. Then again this was trained on a laptop 4060, so if a user wanted to edit the model architecture, it shouldn't take too long to retrain. However, the model achieves around 90% accuracy already, so unless exxtreme accuracy is desired, I wouldn't change it. 
+
+---
+
+### Possible Errors
+
+- Because the model was trained on certain books, the model might distinguish one word to be part of a language. A speific noun may casue the model to choose the wrong class but there should theoretically be only a couple nouns like that.
 
 
 
