@@ -1,5 +1,5 @@
 # lang16-detector
-  A lightweight pytorch model that can classify 16 different languages 
+  A lightweight pytorch model that can classify 16 different languages
 
  ### Table of Contents
 - Intro
@@ -33,7 +33,7 @@
 ---
 
 ### Model
-The model is around 4 million parameters, with around 8 layers: 1 embedding, 6 LSTM layers, and 1 linear. It uses bert base multilingiual uncased as the tokenizer. 
+The model is around 4 million parameters, with around 8 layers: 1 embedding, 6 LSTM layers, and 1 linear. It uses bert base multilingiual uncased as the tokenizer. It acheived around 92% accuracy on the val_data dataset and the test_data dataset.
 
 ---
 
@@ -65,6 +65,6 @@ Training took 3 epochs with each epoch taking around 27 minutes. With more power
 ---
 
 ### Future
-In the event I decide to revisit this project, I will try to include all the languages in the tokenizer, bert base multilingual uncased.
+In the event I decide to revisit this project, I will try to include all the languages in the tokenizer, bert base multilingual uncased. I would also try to shrink the model to a smaller size.
 
 
