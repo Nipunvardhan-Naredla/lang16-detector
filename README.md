@@ -32,16 +32,16 @@
 ---
 
 ### Model
-The model is around 
+The model is around 4 million parameters
 
 ---
 
 ### DataSets
 This repository contains 5 datasets:
-  - large_test_data.json ~ 30 million tokens
-  - test_data.json ~ 3 million tokens
-  - train_data.json ~ 24 million tokens
-  - val_data.json ~ 3 million tokens
+  - large_test_data.json ~ 24 million tokens
+  - test_data.json ~ 2.4 million tokens
+  - train_data.json ~ 19.2 million tokens
+  - val_data.json ~ 2.4 million tokens
   - very_small_test.json ~ 200 tokens
 
 
@@ -58,7 +58,7 @@ Training took 3 epochs with each epoch taking around 27 minutes. With more power
 
 ### Possible Errors
 
-- Because the model was trained on certain books, the model might distinguish one word to be part of a language. A speific noun may casue the model to choose the wrong class but there should theoretically be only a couple nouns like that.
+- Because the model was trained on certain books, the model might distinguish one word to be part of a language. A specific noun may casue the model to choose the wrong class but there should theoretically be only a couple nouns like that.
 
 
 
