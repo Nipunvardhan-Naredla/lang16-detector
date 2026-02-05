@@ -8,6 +8,7 @@
 - Training
 - Possible Errors
 - Future
+- Notes
 
 ---
 
@@ -66,5 +67,11 @@ Training took 3 epochs with each epoch taking around 27 minutes. With more power
 
 ### Future
 In the event I decide to revisit this project, I will try to include all the languages in the tokenizer, bert base multilingual uncased. I would also try to shrink the model to a smaller size.
+
+---
+
+### Notes
+- If you want to try put the model, you only need to install the requirements.txt and the model folder
+- Due to the datasets being quite large, I added them to the releases.
 
 
