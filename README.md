@@ -1,5 +1,5 @@
 # lang16-detector
-  A lightweight pytorch model that can classify 16 different languages 
+  A lightweight pytorch model that can classify 16 different languages
 
  ### Table of Contents
 - Intro
@@ -7,11 +7,12 @@
 - Datasets 
 - Training
 - Possible Errors
+- Future
 
 ---
 
 ### Intro
-  lang16-detector is a extremely lightweight pytorch model, that can classify these 16 languages:
+  lang16-detector is a lightweight pytorch model, that can classify these 16 languages:
   - Catalan
   - Danish
   - German
@@ -32,7 +33,7 @@
 ---
 
 ### Model
-The model is around 4 million parameters
+The model is around 4 million parameters, with around 8 layers: 1 embedding, 6 LSTM layers, and 1 linear. It uses bert base multilingiual uncased as the tokenizer. It acheived around 92% accuracy on the val_data dataset and the test_data dataset.
 
 ---
 
@@ -59,7 +60,11 @@ Training took 3 epochs with each epoch taking around 27 minutes. With more power
 ### Possible Errors
 
 - Because the model was trained on certain books, the model might distinguish one word to be part of a language. A specific noun may casue the model to choose the wrong class but there should theoretically be only a couple nouns like that.
+- Due to being trained on public domain texts that are older, it might get current slang incorrect. 
 
+---
 
+### Future
+In the event I decide to revisit this project, I will try to include all the languages in the tokenizer, bert base multilingual uncased. I would also try to shrink the model to a smaller size.
 
 
