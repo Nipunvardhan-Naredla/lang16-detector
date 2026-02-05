@@ -34,7 +34,7 @@
 ---
 
 ### Model
-The model is around 4 million parameters, with around 8 layers: 1 embedding, 6 LSTM layers, and 1 linear. It uses bert base multilingiual uncased as the tokenizer. It acheived around 92% accuracy on the val_data dataset and the test_data dataset.
+The model is around 4 million parameters, with around 8 layers: 1 embedding, 6 LSTM layers, and 1 linear. It uses bert base multilingiual uncased as the tokenizer. It acheived around 92% accuracy on the val_data dataset and 93% on the test_data dataset.
 
 ---
 
