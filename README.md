@@ -62,13 +62,22 @@ Training took 3 epochs with each epoch taking around 27 minutes. With more power
 There is a folder in this repository named "GUI for lang16-detector". I used customtkinter to build a simple GUI that allows a user to type into a textbox and click enter. The GUI will display the language and the confindence in that language. To use the gui, install the requirements.txt and run window.pyw. 
 
 The UI:
-![A picture of the UI]()
+![A picture of the UI](/GUI_picture.png)
+
+---
+
+### Using in your own projects:
+
+1.  Copy the lang16_detector in the "GUI for lang16-detector" folder into your project.
+2.  Import the function into your script with this line: ```from lang16_detector import query_model```
+3.  query_model has 1 argument- the string you want to know the language of.
+4.  query_model will return a dictonary with 2 keys: "class" and "confidence". Class is the language the model thinks the string is and confidence is sthe confidence in that class
 
 ---
 
 ### Possible Errors
 
-- Because the model was trained on certain books, the model might distinguish one word to be part of a language. A specific noun may casue the model to choose the wrong class but there should theoretically be only a couple nouns like that.
+- Because the model was trained on certain books, the model might distinguish one word to be part of a language. A specific noun may cause the model to choose the wrong class but there should theoretically be only a couple nouns like that.
 - Due to being trained on public domain texts that are older, it might get current slang incorrect. 
 
 ---
