@@ -47,7 +47,7 @@ This repository contains 5 datasets:
   - very_small_test.json ~ 200 tokens
 
 
-All of these datasets were created from files obtained from Project Gutenberg. They were sorted via guten-sort(another one of my public repositories) and a few helper scripts, which I included in this repository under dataset creation. These helper scripts are not documeted as well as the training script and the querying script, and are most likely not optimized at all. But they work and should allow someeone to recreate these datasets if neccesary.
+All of these datasets were created from files obtained from Project Gutenberg. They were sorted via guten-sort(another one of my public repositories) and a few helper scripts, which I included in this repository under dataset creation. These helper scripts are not documented as well as the training script and the querying script, and are most likely not optimized at all. But they work and should allow someone to recreate these datasets if neccesary.
 
 The datasets are evenly split with no class taking up more than 7% of the total datasets. When using these datasets, the user will not need to worry about uneven distribution.
 
@@ -88,7 +88,6 @@ In the event I decide to revisit this project, I will try to include all the lan
 ---
 
 ### Notes
-- If you want to try put the model, you only need to install the requirements.txt and the model folder
 - Due to the datasets being quite large, I added them to the releases.
 
 
