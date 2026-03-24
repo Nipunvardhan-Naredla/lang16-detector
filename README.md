@@ -71,7 +71,7 @@ The UI:
 1.  Copy the lang16_detector in the "GUI for lang16-detector" folder into your project.
 2.  Import the function into your script with this line: ```from lang16_detector import query_model```
 3.  query_model has 1 argument- the string you want to know the language of.
-4.  query_model will return a dictonary with 2 keys: "class" and "confidence". Class is the language the model thinks the string is and confidence is sthe confidence in that class
+4.  query_model will return a dictonary with 2 keys: "class" and "confidence". Class is the language the model thinks the string is and confidence is the confidence in that class
 
 ---
 
