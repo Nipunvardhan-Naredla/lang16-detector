@@ -58,6 +58,14 @@ Training took 3 epochs with each epoch taking around 27 minutes. With more power
 
 ---
 
+### GUI for lang16 detector
+There is a folder in this repository named "GUI for lang16-detector". I used customtkinter to build a simple GUI that allows a user to type into a textbox and click enter. The GUI will display the language and the confindence in that language. To use the gui, install the requirements.txt and run window.pyw. 
+
+The UI:
+![A picture of the UI]()
+
+---
+
 ### Possible Errors
 
 - Because the model was trained on certain books, the model might distinguish one word to be part of a language. A specific noun may casue the model to choose the wrong class but there should theoretically be only a couple nouns like that.
